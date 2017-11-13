@@ -1,15 +1,23 @@
 # Palantir osquery Configuration
 
 ## About This Repository
-This repository is the companion to the [osquery Across the Enterprise](https://link.tbd) blog post.
+This repository is the companion to the [osquery Across the Enterprise](https://medium.com/@palantir/osquery-across-the-enterprise-3c3c9d13ec55) blog post.
 
 The goal of this project is to provide a baseline template for any organization considering a deployment of osquery in a production environment. It is
 our belief that queries which are likely to have a high level of utility for a large percentage of users should be committed directly to the osquery project, which is
-exactly what we have done with our unwanted-chrome-extensions query pack and additions to the windows-attacks pack. However, we have included additional query packs
+exactly what we have done with our [unwanted-chrome-extensions](https://github.com/facebook/osquery/pull/3889) query pack and [additions](https://github.com/facebook/osquery/pull/3922) to the windows-attacks pack.
+
+However, we have included additional query packs
 that are more tailored to our specific environment that may be useful to some or at least serve as a reference to other organizations. osquery operates best when
 operators have carefully considered the datasets to be collected and the potential use-cases for that data.
+* [performance-metrics.conf](https://github.com/palantir/osquery-configuration/blob/master/Endpoints/packs/performance-metrics.conf)
+* [security-tooling-checks.conf](https://github.com/palantir/osquery-configuration/blob/master/Endpoints/packs/security-tooling-checks.conf)
+* [windows-application-security.conf](https://github.com/palantir/osquery-configuration/blob/master/Endpoints/packs/windows-application-security.conf)
+* [windows-compliance.conf](https://github.com/palantir/osquery-configuration/blob/master/Endpoints/packs/windows-compliance.conf)
+* [windows-registry-monitoring.conf](https://github.com/palantir/osquery-configuration/blob/master/Endpoints/packs/windows-registry-monitoring.conf)
 
-**Note**: This repository contains copies of packs that are maintained in the official osquery project to save users time from having to download packs from two different locations:
+
+**Note**: This repository also contains copies of packs that are maintained in the official osquery project in order to save users time from having to download packs from two different locations when testing our configs:
 * [ossec-rootkit.conf](https://github.com/facebook/osquery/blob/master/packs/ossec-rootkit.conf)
 * [osx-attacks.conf](https://github.com/facebook/osquery/blob/master/packs/osx-attacks.conf)
 * [unwanted-chrome-extensions.conf](https://github.com/facebook/osquery/blob/master/packs/unwanted-chrome-extensions.conf)
@@ -41,7 +49,7 @@ environment.
 * Requires the [ossec-rootkit.conf](./Servers/Linux/packs/ossec-rootkit.conf) pack found to be located at `/etc/osquery/packs/ossec-rootkit.conf`
 * The subscriber for `user_events` is disabled
 
-**Quickstart**
+## Quickstart
 1. [Install osquery](https://osquery.io/downloads/)
 2. Copy the osquery.conf and osquery.flags files from this repository onto the system and match the directory structure shown below
 3. Start osquery via `sudo osqueryctl start` on Linux/MacOS or `Start-Process osqueryd` on Windows
@@ -72,7 +80,7 @@ $ mv /var/osquery/osquery_no_tls.flags /var/osquery/osquery.flags   ## Non-TLS s
 $ sudo osqueryctl start
 
 /var/osquery
-├── certs.crt [if using TLS endpoint]
+├── certfile.crt [if using TLS endpoint]
 ├── osquery.conf
 ├── osquery.db
 ├── osquery.flags
@@ -92,7 +100,7 @@ PS> copy-item c:\ProgramData\osquery\osquery_no_tls.flags c:\ProgramData\osquery
 PS> start-service osqueryd
 
 c:\ProgramData\osquery
-├── certs.crt [if using TLS endpoint]
+├── certfile.crt [if using TLS endpoint]
 ├── log
 ├── osquery.conf
 ├── osquery.db
