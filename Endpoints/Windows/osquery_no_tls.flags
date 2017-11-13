@@ -1,0 +1,8 @@
+--allow_unsafe
+--config_path=c:\ProgramData\osquery\osquery.conf
+--disable_events=true
+--disable_tables=windows_events
+--host_identifier=hostname
+--logger_min_status=1
+--logger_plugin=filesystem
+--verbose=true

@@ -1,0 +1,8 @@
+--audit_allow_config=true
+--audit_allow_sockets
+--audit_persist=true
+--disable_audit=false
+--events_expiry=1
+--events_max=50000
+--logger_plugin=filesystem
+--watchdog_memory_limit=350
