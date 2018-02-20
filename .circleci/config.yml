@@ -13,10 +13,6 @@ jobs:
       - run: sudo cp -R Endpoints/packs /var/osquery
       - run: sudo cp -R Servers/Linux/packs /var/osquery
       - run: cp -R Endpoints/packs Endpoints/Windows
-
-  test:
-    machine: true
-    steps:
       # Use osquery to check the entire config
       - run: cd Servers/Linux && sudo osqueryd --config_path=osquery.conf --config_check
       # Extract raw queries from the config
