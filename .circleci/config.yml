@@ -15,6 +15,7 @@ jobs:
       - run: cp -R Endpoints/packs Endpoints/Windows
 
   test:
+    machine: true
     steps:
       # Use osquery to check the entire config
       - run: cd Servers/Linux && sudo osqueryd --config_path=osquery.conf --config_check
