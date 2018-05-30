@@ -17,13 +17,11 @@ operators have carefully considered the datasets to be collected and the potenti
 * [windows-registry-monitoring.conf](https://github.com/palantir/osquery-configuration/blob/master/Endpoints/packs/windows-registry-monitoring.conf)
 
 
-**Note**: This repository also contains copies of packs that are maintained in the official osquery project in order to save users time from having to download packs from two different locations when testing our configs:
+**Note**: We also utilize packs that are maintained in the official osquery project. In order to ensure you receive the most up to date version of the pack, please view them using the links below:
 * [ossec-rootkit.conf](https://github.com/facebook/osquery/blob/master/packs/ossec-rootkit.conf)
 * [osx-attacks.conf](https://github.com/facebook/osquery/blob/master/packs/osx-attacks.conf)
 * [unwanted-chrome-extensions.conf](https://github.com/facebook/osquery/blob/master/packs/unwanted-chrome-extensions.conf)
 * [windows-attacks.conf](https://github.com/facebook/osquery/blob/master/packs/windows-attacks.conf)
-
-These packs may not be kept up to date in this repository, so please be sure to download them from the official osquery repository if you desire the most up to date pack content.
 
 ## Repository Layout
 This repository is organized as follows:
