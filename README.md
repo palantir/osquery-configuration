@@ -25,8 +25,13 @@ operators have carefully considered the datasets to be collected and the potenti
 
 ## Repository Layout
 This repository is organized as follows:
-* [**Endpoints**](./Endpoints/): The contents of this folder are tailored towards monitoring MacOS and Windows endpoints that are not expected to be online at all times. You may notice the interval of many queries in this folder set to 28800. We purposely set the interval to this value because the interval timer only moves forward when a host is online and we would only expect an endpoint to be online for about 8 hours, or 28800 seconds, per day.
-* [**Servers**](./Servers/): The contents of this folder are tailored towards monitoring Linux servers. This configuration has process and network auditing enabled, so expect an exponentially higher volume of logs to be returned from the agent.
+* At the top level, there are two directories titled "Classic" and "Fleet"
+  * The [Classic](./Classic/) directory contains configuration files for a standard osquery deployment
+  * The [Fleet](./Fleet/) directory contains YAML files to be imported into Kolide's [Fleet](https://github.com/kolide/fleet) osquery management tool
+
+Within each of those folders, you will find the following subdirectories:
+* **Endpoints**: The contents of this folder are tailored towards monitoring MacOS and Windows endpoints that are not expected to be online at all times. You may notice the interval of many queries in this folder set to 28800. We purposely set the interval to this value because the interval timer only moves forward when a host is online and we would only expect an endpoint to be online for about 8 hours, or 28800 seconds, per day.
+* **Servers**: The contents of this folder are tailored towards monitoring Linux servers. This configuration has process and network auditing enabled, so expect an exponentially higher volume of logs to be returned from the agent.
 
 
 ## Using This Repository
@@ -47,11 +52,27 @@ environment.
 * Requires the [ossec-rootkit.conf](./Servers/Linux/packs/ossec-rootkit.conf) pack found to be located at `/etc/osquery/packs/ossec-rootkit.conf`
 * The subscriber for `user_events` is disabled
 
-## Quickstart
+## Quickstart - Classic
 1. [Install osquery](https://osquery.io/downloads/)
 2. Copy the osquery.conf and osquery.flags files from this repository onto the system and match the directory structure shown below
 3. Start osquery via `sudo osqueryctl start` on Linux/MacOS or `Start-Process osqueryd` on Windows
 4. Logs are located in `/var/log/osquery` (Linux/MacOS) and `c:\ProgramData\osquery\logs` (Windows)
+
+## Quickstart - Fleet
+1. Install Fleet v2.0.0 or higher on a server
+2. Configure all hosts to be enrolled to connect to the Fleet server by configuring the appropriate [flags](https://github.com/kolide/fleet/blob/master/tools/osquery/example_osquery.flags)
+2. [Configure the fleetctl utility](https://github.com/kolide/fleet/blob/master/docs/cli/setup-guide.md#fleetctl-setup) to communicate with the Fleet server
+3. Assuming you'd like to use the endpoint configs, you can use the commands below to apply them to the Fleet server:
+
+```
+git clone https://github.com/palantir/osquery-configuration.git
+fleetctl apply -f osquery-configuration/Fleet/Endpoints/options.yaml
+fleetctl apply -f osquery-configuration/Fleet/Endpoints/MacOS/osquery.yaml
+fleetctl apply -f osquery-configuration/Fleet/Endpoints/Windows/osquery.yaml
+for pack in osquery-configuration/Fleet/Endpoints/*.yaml;
+ do fleetctl apply -f "$pack"
+done
+```
 
 The desired osquery directory structure for Linux, MacOS, and Windows is outlined below:
 
