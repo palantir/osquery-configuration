@@ -1,0 +1,742 @@
+---
+apiVersion: v1
+kind: pack
+spec:
+  name: ossec-rootkit
+  queries:
+  - description: mithra`s_rootkit
+    interval: 3600
+    name: mithra`s_rootkit
+    platform: linux
+    query: mithra`s_rootkit
+  - description: illogic_rootkit
+    interval: 3600
+    name: illogic_rootkit
+    platform: linux
+    query: illogic_rootkit
+  - description: override_rootkit
+    interval: 3600
+    name: override_rootkit
+    platform: linux
+    query: override_rootkit
+  - description: monkit_found
+    interval: 3600
+    name: monkit_found
+    platform: linux
+    query: monkit_found
+  - description: tuxkit_rootkit
+    interval: 3600
+    name: tuxkit_rootkit
+    platform: linux
+    query: tuxkit_rootkit
+  - description: tc2_worm
+    interval: 3600
+    name: tc2_worm
+    platform: linux
+    query: tc2_worm
+  - description: sadmind/iis_worm
+    interval: 3600
+    name: sadmind/iis_worm
+    platform: linux
+    query: sadmind/iis_worm
+  - description: showtee
+    interval: 3600
+    name: showtee
+    platform: linux
+    query: showtee
+  - description: rk17
+    interval: 3600
+    name: rk17
+    platform: linux
+    query: rk17
+  - description: scalper_installed
+    interval: 3600
+    name: scalper_installed
+    platform: linux
+    query: scalper_installed
+  - description: shv5_rootkit
+    interval: 3600
+    name: shv5_rootkit
+    platform: linux
+    query: shv5_rootkit
+  - description: monkit
+    interval: 3600
+    name: monkit
+    platform: linux
+    query: monkit
+  - description: shitc
+    interval: 3600
+    name: shitc
+    platform: linux
+    query: shitc
+  - description: romanian_rootkit
+    interval: 3600
+    name: romanian_rootkit
+    platform: linux
+    query: romanian_rootkit
+  - description: cback_worm
+    interval: 3600
+    name: cback_worm
+    platform: linux
+    query: cback_worm
+  - description: volc_rootkit
+    interval: 3600
+    name: volc_rootkit
+    platform: linux
+    query: volc_rootkit
+  - description: telekit_trojan
+    interval: 3600
+    name: telekit_trojan
+    platform: linux
+    query: telekit_trojan
+  - description: lrk_rootkit
+    interval: 3600
+    name: lrk_rootkit
+    platform: linux
+    query: lrk_rootkit
+  - description: zk_rootkit
+    interval: 3600
+    name: zk_rootkit
+    platform: linux
+    query: zk_rootkit
+  - description: optickit
+    interval: 3600
+    name: optickit
+    platform: linux
+    query: optickit
+  - description: hidr00tkit
+    interval: 3600
+    name: hidr00tkit
+    platform: linux
+    query: hidr00tkit
+  - description: knark_installed
+    interval: 3600
+    name: knark_installed
+    platform: linux
+    query: knark_installed
+  - description: fu_rootkit
+    interval: 3600
+    name: fu_rootkit
+    platform: linux
+    query: fu_rootkit
+  - description: kenga3_rootkit
+    interval: 3600
+    name: kenga3_rootkit
+    platform: linux
+    query: kenga3_rootkit
+  - description: ajakit_rootkit
+    interval: 3600
+    name: ajakit_rootkit
+    platform: linux
+    query: ajakit_rootkit
+  - description: esrk_rootkit
+    interval: 3600
+    name: esrk_rootkit
+    platform: linux
+    query: esrk_rootkit
+  - description: apa_kit
+    interval: 3600
+    name: apa_kit
+    platform: linux
+    query: apa_kit
+  - description: adore_worm
+    interval: 3600
+    name: adore_worm
+    platform: linux
+    query: adore_worm
+  - description: phalanx_rootkit
+    interval: 3600
+    name: phalanx_rootkit
+    platform: linux
+    query: phalanx_rootkit
+  - description: zarwt_rootkit
+    interval: 3600
+    name: zarwt_rootkit
+    platform: linux
+    query: zarwt_rootkit
+  - description: beastkit_rootkit
+    interval: 3600
+    name: beastkit_rootkit
+    platform: linux
+    query: beastkit_rootkit
+  - description: t0rn_rootkit
+    interval: 3600
+    name: t0rn_rootkit
+    platform: linux
+    query: t0rn_rootkit
+  - description: 55808.a_worm
+    interval: 3600
+    name: 55808.a_worm
+    platform: linux
+    query: 55808.a_worm
+  - description: ramen_worm
+    interval: 3600
+    name: ramen_worm
+    platform: linux
+    query: ramen_worm
+  - description: bobkit_rootkit
+    interval: 3600
+    name: bobkit_rootkit
+    platform: linux
+    query: bobkit_rootkit
+  - description: enye_sec_rootkit
+    interval: 3600
+    name: enye_sec_rootkit
+    platform: linux
+    query: enye_sec_rootkit
+  - description: trk_rootkit
+    interval: 3600
+    name: trk_rootkit
+    platform: linux
+    query: trk_rootkit
+  - description: ldp_worm
+    interval: 3600
+    name: ldp_worm
+    platform: linux
+    query: ldp_worm
+  - description: bmbl_rootkit
+    interval: 3600
+    name: bmbl_rootkit
+    platform: linux
+    query: bmbl_rootkit
+  - description: suckit_rootkit
+    interval: 3600
+    name: suckit_rootkit
+    platform: linux
+    query: suckit_rootkit
+  - description: lion_worm
+    interval: 3600
+    name: lion_worm
+    platform: linux
+    query: lion_worm
+  - description: shkit_rootkit
+    interval: 3600
+    name: shkit_rootkit
+    platform: linux
+    query: shkit_rootkit
+  - description: slapper_installed
+    interval: 3600
+    name: slapper_installed
+    platform: linux
+    query: slapper_installed
+  - description: old_rootkits
+    interval: 3600
+    name: old_rootkits
+    platform: linux
+    query: old_rootkits
+  - description: anonoiyng_rootkit
+    interval: 3600
+    name: anonoiyng_rootkit
+    platform: linux
+    query: anonoiyng_rootkit
+  - description: omega_worm
+    interval: 3600
+    name: omega_worm
+    platform: linux
+    query: omega_worm
+  - description: tribe_bot
+    interval: 3600
+    name: tribe_bot
+    platform: linux
+    query: tribe_bot
+  - description: loc_rookit
+    interval: 3600
+    name: loc_rookit
+    platform: linux
+    query: loc_rookit
+  - description: adore_rootkit
+    interval: 3600
+    name: adore_rootkit
+    platform: linux
+    query: adore_rootkit
+  - description: solaris_worm
+    interval: 3600
+    name: solaris_worm
+    platform: linux
+    query: solaris_worm
+  - description: ark_rootkit
+    interval: 3600
+    name: ark_rootkit
+    platform: linux
+    query: ark_rootkit
+  - description: rh_sharpe
+    interval: 3600
+    name: rh_sharpe
+    platform: linux
+    query: rh_sharpe
+  - description: rsha
+    interval: 3600
+    name: rsha
+    platform: linux
+    query: rsha
+  - description: showtee_/_romanian_rootkit
+    interval: 3600
+    name: showtee_/_romanian_rootkit
+    platform: linux
+    query: showtee_/_romanian_rootkit
+  - description: maniac_rk
+    interval: 3600
+    name: maniac_rk
+    platform: linux
+    query: maniac_rk
+  - description: madalin_rootkit
+    interval: 3600
+    name: madalin_rootkit
+    platform: linux
+    query: madalin_rootkit
+  - description: suspicious_file
+    interval: 3600
+    name: suspicious_file
+    platform: linux
+    query: suspicious_file
+  - description: bash_door
+    interval: 3600
+    name: bash_door
+    platform: linux
+    query: bash_door
+  targets:
+    labels: null
+---
+apiVersion: v1
+kind: query
+spec:
+  description: mithra`s_rootkit
+  name: mithra`s_rootkit
+  query: select * from file where path in ('/usr/lib/locale/uboot');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: illogic_rootkit
+  name: illogic_rootkit
+  query: select * from file where path in ('/lib/security/.config', '/usr/bin/sia',
+    '/etc/ld.so.hash');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: override_rootkit
+  name: override_rootkit
+  query: select * from file where path in ('/dev/grid-hide-pid-', '/dev/grid-unhide-pid-',
+    '/dev/grid-show-pids', '/dev/grid-hide-port-', '/dev/grid-unhide-port-');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: monkit_found
+  name: monkit_found
+  query: select * from file where path in ('/usr/lib/libpikapp.a');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: tuxkit_rootkit
+  name: tuxkit_rootkit
+  query: select * from file where path in ('/dev/tux', '/usr/bin/xsf', '/usr/bin/xchk');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: tc2_worm
+  name: tc2_worm
+  query: select * from file where path in ('/usr/info/.tc2k', '/usr/bin/util', '/usr/sbin/initcheck',
+    '/usr/sbin/ldb');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: sadmind/iis_worm
+  name: sadmind/iis_worm
+  query: select * from file where path in ('/dev/cuc');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: showtee
+  name: showtee
+  query: select * from file where path in ('/usr/lib/.egcs', '/usr/lib/.wormie', '/usr/lib/.kinetic',
+    '/usr/lib/liblog.o', '/usr/include/cron.h', '/usr/include/chk.h');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: rk17
+  name: rk17
+  query: select * from file where path in ('/bin/rtty', '/bin/squit', '/sbin/pback',
+    '/proc/kset', '/usr/src/linux/modules/autod.o', '/usr/src/linux/modules/soundx.o');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: scalper_installed
+  name: scalper_installed
+  query: select * from file where path in ('/tmp/.uua', '/tmp/.a');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: shv5_rootkit
+  name: shv5_rootkit
+  query: select * from file where path in ('/lib/libsh.so', '/usr/lib/libsh');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: monkit
+  name: monkit
+  query: select * from file where path in ('/lib/defs');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: shitc
+  name: shitc
+  query: select * from file where path in ('/bin/home', '/sbin/home', '/usr/sbin/in.slogind');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: romanian_rootkit
+  name: romanian_rootkit
+  query: select * from file where path in ('/usr/sbin/initdl', '/usr/sbin/xntps');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: cback_worm
+  name: cback_worm
+  query: select * from file where path in ('/tmp/cback', '/tmp/derfiq');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: volc_rootkit
+  name: volc_rootkit
+  query: select * from file where path in ('/usr/lib/volc', '/usr/bin/volc');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: telekit_trojan
+  name: telekit_trojan
+  query: select * from file where path in ('/dev/hda06', '/usr/info/libc1.so');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: lrk_rootkit
+  name: lrk_rootkit
+  query: select * from file where path in ('/dev/ida/.inet');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: zk_rootkit
+  name: zk_rootkit
+  query: select * from file where path in ('/usr/share/.zk', '/usr/share/.zk/zk',
+    '/etc/1ssue.net', '/usr/X11R6/.zk', '/usr/X11R6/.zk/xfs', '/usr/X11R6/.zk/echo',
+    '/etc/sysconfig/console/load.zk');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: optickit
+  name: optickit
+  query: select * from file where path in ('/usr/bin/xchk', '/usr/bin/xsf', '/usr/bin/xsf',
+    '/usr/bin/xchk');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: hidr00tkit
+  name: hidr00tkit
+  query: select * from file where path in ('/var/lib/games/.k');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: knark_installed
+  name: knark_installed
+  query: select * from file where path in ('/proc/knark', '/dev/.pizda', '/dev/.pula',
+    '/dev/.pula');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: fu_rootkit
+  name: fu_rootkit
+  query: select * from file where path in ('/sbin/xc', '/usr/include/ivtype.h', '/bin/.lib');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: kenga3_rootkit
+  name: kenga3_rootkit
+  query: select * from file where path in ('/usr/include/. .');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: ajakit_rootkit
+  name: ajakit_rootkit
+  query: select * from file where path in ('/lib/.ligh.gh', '/lib/.libgh.gh', '/lib/.libgh-gh',
+    '/dev/tux', '/dev/tux/.proc', '/dev/tux/.file');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: esrk_rootkit
+  name: esrk_rootkit
+  query: select * from file where path in ('/usr/lib/tcl5.3');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: apa_kit
+  name: apa_kit
+  query: select * from file where path in ('/usr/share/.aPa');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: adore_worm
+  name: adore_worm
+  query: select * from file where path in ('/dev/.shit/red.tgz', '/usr/lib/libt',
+    '/usr/bin/adore');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: phalanx_rootkit
+  name: phalanx_rootkit
+  query: select * from file where path in ('/usr/share/.home*', '/usr/share/.home*/tty',
+    '/etc/host.ph1', '/bin/host.ph1');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: zarwt_rootkit
+  name: zarwt_rootkit
+  query: select * from file where path in ('/bin/imin', '/bin/imout');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: beastkit_rootkit
+  name: beastkit_rootkit
+  query: select * from file where path in ('/usr/local/bin/bin', '/usr/man/.man10',
+    '/usr/sbin/arobia', '/usr/lib/elm/arobia', '/usr/local/bin/.../bktd');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: t0rn_rootkit
+  name: t0rn_rootkit
+  query: select * from file where path in ('/usr/src/.puta', '/usr/info/.t0rn', '/lib/ldlib.tk',
+    '/etc/ttyhash', '/sbin/xlogin');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: 55808.a_worm
+  name: 55808.a_worm
+  query: select * from file where path in ('/tmp/.../a', '/tmp/.../r');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: ramen_worm
+  name: ramen_worm
+  query: select * from file where path in ('/usr/lib/ldlibps.so', '/usr/lib/ldlibns.so',
+    '/usr/lib/ldliblogin.so', '/usr/src/.poop', '/tmp/ramen.tgz', '/etc/xinetd.d/asp');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: bobkit_rootkit
+  name: bobkit_rootkit
+  query: select * from file where path in ('/usr/include/.../', '/usr/lib/.../', '/usr/sbin/.../',
+    '/usr/bin/ntpsx', '/tmp/.bkp', '/usr/lib/.bkit-');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: enye_sec_rootkit
+  name: enye_sec_rootkit
+  query: select * from file where path in ('/etc/.enyelkmHIDE^IT.ko');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: trk_rootkit
+  name: trk_rootkit
+  query: select * from file where path in ('/usr/bin/soucemask', '/usr/bin/sourcemask');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: ldp_worm
+  name: ldp_worm
+  query: select * from file where path in ('/dev/.kork', '/bin/.login', '/bin/.ps');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: bmbl_rootkit
+  name: bmbl_rootkit
+  query: select * from file where path in ('/etc/.bmbl', '/etc/.bmbl/sk');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: suckit_rootkit
+  name: suckit_rootkit
+  query: select * from file where path in ('/lib/.x', '/lib/sk');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: lion_worm
+  name: lion_worm
+  query: select * from file where path in ('/dev/.lib', '/dev/.lib/1iOn.sh', '/bin/mjy',
+    '/bin/in.telnetd', '/usr/info/torn');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: shkit_rootkit
+  name: shkit_rootkit
+  query: select * from file where path in ('/lib/security/.config', '/etc/ld.so.hash');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: slapper_installed
+  name: slapper_installed
+  query: select * from file where path in ('/tmp/.bugtraq', '/tmp/.bugtraq.c', '/tmp/.cinik',
+    '/tmp/.b', '/tmp/httpd', '/tmp./update', '/tmp/.unlock', '/tmp/.font-unix/.cinik',
+    '/tmp/.cinik');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: old_rootkits
+  name: old_rootkits
+  query: select * from file where path in ('/usr/include/rpc/ ../kit', '/usr/include/rpc/
+    ../kit2', '/usr/doc/.sl', '/usr/doc/.sp', '/usr/doc/.statnet', '/usr/doc/.logdsys',
+    '/usr/doc/.dpct', '/usr/doc/.gifnocfi', '/usr/doc/.dnif', '/usr/doc/.nigol');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: anonoiyng_rootkit
+  name: anonoiyng_rootkit
+  query: select * from file where path in ('/usr/sbin/mech', '/usr/sbin/kswapd');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: omega_worm
+  name: omega_worm
+  query: select * from file where path in ('/dev/chr');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: tribe_bot
+  name: tribe_bot
+  query: select * from file where path in ('/dev/wd4');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: loc_rookit
+  name: loc_rookit
+  query: select * from file where path in ('/tmp/xp', '/tmp/kidd0.c', '/tmp/kidd0');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: adore_rootkit
+  name: adore_rootkit
+  query: select * from file where path in ('/etc/bin/ava', '/etc/sbin/ava');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: solaris_worm
+  name: solaris_worm
+  query: select * from file where path in ('/var/adm/.profile', '/var/spool/lp/.profile',
+    '/var/adm/sa/.adm', '/var/spool/lp/admins/.lp');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: ark_rootkit
+  name: ark_rootkit
+  query: select * from file where path in ('/dev/ptyxx');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: rh_sharpe
+  name: rh_sharpe
+  query: select * from file where path in ('/bin/.ps', '/usr/bin/cleaner', '/usr/bin/slice',
+    '/usr/bin/vadim', '/usr/bin/.ps', '/bin/.lpstree', '/usr/bin/.lpstree', '/usr/bin/lnetstat',
+    '/bin/lnetstat', '/usr/bin/ldu', '/bin/ldu', '/usr/bin/lkillall', '/bin/lkillall',
+    '/usr/include/rpcsvc/du');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: rsha
+  name: rsha
+  query: select * from file where path in ('/usr/bin/kr4p', '/usr/bin/n3tstat', '/usr/bin/chsh2',
+    '/usr/bin/slice2', '/etc/rc.d/rsha');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: showtee_/_romanian_rootkit
+  name: showtee_/_romanian_rootkit
+  query: select * from file where path in ('/usr/include/addr.h', '/usr/include/file.h',
+    '/usr/include/syslogs.h', '/usr/include/proc.h');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: maniac_rk
+  name: maniac_rk
+  query: select * from file where path in ('/usr/bin/mailrc');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: madalin_rootkit
+  name: madalin_rootkit
+  query: select * from file where path in ('/usr/include/icekey.h', '/usr/include/iceconf.h',
+    '/usr/include/iceseed.h');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: suspicious_file
+  name: suspicious_file
+  query: select * from file where path in ('/etc/rc.d/init.d/rc.modules', '/lib/ldd.so',
+    '/usr/man/muie', '/usr/X11R6/include/pain', '/usr/bin/sourcemask', '/usr/bin/ras2xm',
+    '/usr/bin/ddc', '/usr/bin/jdc', '/usr/sbin/in.telnet', '/sbin/vobiscum', '/usr/sbin/jcd',
+    '/usr/sbin/atd2', '/usr/bin/ishit', '/usr/bin/.etc', '/usr/bin/xstat', '/var/run/.tmp',
+    '/usr/man/man1/lib/.lib', '/usr/man/man2/.man8', '/var/run/.pid', '/lib/.so',
+    '/lib/.fx', '/lib/lblip.tk', '/usr/lib/.fx', '/var/local/.lpd', '/dev/rd/cdb',
+    '/dev/.rd/', '/usr/lib/pt07', '/usr/bin/atm', '/tmp/.cheese', '/dev/.arctic',
+    '/dev/.xman', '/dev/.golf', '/dev/srd0', '/dev/ptyzx', '/dev/ptyzg', '/dev/xdf1',
+    '/dev/ttyop', '/dev/ttyof', '/dev/hd7', '/dev/hdx1', '/dev/hdx2', '/dev/xdf2',
+    '/dev/ptyp', '/dev/ptyr', '/sbin/pback', '/usr/man/man3/psid', '/proc/kset', '/usr/bin/gib',
+    '/usr/bin/snick', '/usr/bin/kfl', '/tmp/.dump', '/var/.x', '/var/.x/psotnic');
+---
+apiVersion: v1
+kind: query
+spec:
+  description: bash_door
+  name: bash_door
+  query: select * from file where path in ('/tmp/mcliZokhb', '/tmp/mclzaKmfa');
