@@ -6,22 +6,22 @@ spec:
   queries:
   - description: Records the CPU time and memory usage for each individual query.
       Helpful for identifying queries that may impact performance.
-    interval: 0
+    interval: 1800
     name: per_query_perf
     query: per_query_perf
     snapshot: true
   - description: Track the amount of CPU time used by osquery.
-    interval: 0
+    interval: 1800
     name: runtime_perf
     query: runtime_perf
     snapshot: true
   - description: Track the percentage of total CPU time utilized by $endpoint_security_tool
-    interval: 0
+    interval: 1800
     name: endpoint_security_tool_perf
     query: endpoint_security_tool_perf
     snapshot: true
   - description: Track the percentage of total CPU time utilized by $backup_tool
-    interval: 0
+    interval: 1800
     name: backup_tool_perf
     query: backup_tool_perf
     snapshot: true

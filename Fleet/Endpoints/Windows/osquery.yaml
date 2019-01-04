@@ -5,43 +5,43 @@ spec:
   name: windows-pack
   queries:
   - description: System info snapshot query
-    interval: 0
+    interval: 28800
     name: system_info_snapshot
     platform: windows
     query: system_info_snapshot
     snapshot: true
   - description: List in-use Windows drivers
-    interval: 0
+    interval: 3600
     name: drivers
     platform: windows
     query: drivers
   - description: Displays shared resources on a computer system running Windows. This
       may be a disk drive, printer, interprocess communication, or other sharable
       device.
-    interval: 0
+    interval: 3600
     name: shared_resources
     platform: windows
     query: shared_resources
   - description: Lists all the patches applied
-    interval: 0
+    interval: 3600
     name: patches
     platform: windows
     query: patches
     removed: false
   - description: Pipes snapshot query
-    interval: 0
+    interval: 28800
     name: pipes_snapshot
     platform: windows
     query: pipes_snapshot
     snapshot: true
   - description: Programs snapshot query
-    interval: 0
+    interval: 28800
     name: programs_snapshot
     platform: windows
     query: programs_snapshot
     snapshot: true
   - description: Services snapshot query
-    interval: 0
+    interval: 28800
     name: services_snapshot
     platform: windows
     query: services_snapshot
@@ -49,78 +49,78 @@ spec:
   - description: WMI CommandLineEventConsumer, which can be used for persistence on
       Windows. See https://www.blackhat.com/docs/us-15/materials/us-15-Graeber-Abusing-Windows-Management-Instrumentation-WMI-To-Build-A-Persistent%20Asynchronous-And-Fileless-Backdoor-wp.pdf
       for more details.
-    interval: 0
+    interval: 3600
     name: wmi_cli_event_consumers
     platform: windows
     query: wmi_cli_event_consumers
   - description: Lists the relationship between event consumers and filters.
-    interval: 0
+    interval: 3600
     name: wmi_filter_consumer_binding
     platform: windows
     query: wmi_filter_consumer_binding
   - description: Snapshot query for Chrome extensions
-    interval: 0
+    interval: 3600
     name: chrome_extensions_snapshot
     platform: windows
     query: chrome_extensions_snapshot
   - description: Retrieve the interface name, IP address, and MAC address for all
       interfaces on the host.
-    interval: 0
+    interval: 600
     name: network_interfaces_snapshot
     platform: windows
     query: network_interfaces_snapshot
     snapshot: true
   - description: Local system users.
-    interval: 0
+    interval: 3600
     name: users
     platform: windows
     query: users
   - description: Snapshot query for WMI event consumers.
-    interval: 0
+    interval: 28800
     name: wmi_cli_event_consumers_snapshot
     platform: windows
     query: wmi_cli_event_consumers_snapshot
     snapshot: true
   - description: List all certificates in the trust store
-    interval: 0
+    interval: 3600
     name: certificates
     platform: windows
     query: certificates
     removed: false
   - description: Drivers snapshot query
-    interval: 0
+    interval: 28800
     name: drivers_snapshot
     platform: windows
     query: drivers_snapshot
     snapshot: true
   - description: Lists WMI event filters.
-    interval: 0
+    interval: 3600
     name: wmi_event_filters
     platform: windows
     query: wmi_event_filters
   - description: List installed Internet Explorer extensions
-    interval: 0
+    interval: 3600
     name: ie_extensions
     platform: windows
     query: ie_extensions
   - description: List the kernel path, version, etc.
-    interval: 0
+    interval: 3600
     name: kernel_info
     platform: windows
     query: kernel_info
   - description: List the version of the resident operating system
-    interval: 0
+    interval: 3600
     name: os_version
     platform: windows
     query: os_version
   - description: Patches snapshot query
-    interval: 0
+    interval: 28800
     name: patches_snapshot
     platform: windows
     query: patches_snapshot
     snapshot: true
   - description: Named and Anonymous pipes.
-    interval: 0
+    interval: 3600
     name: pipes
     platform: windows
     query: pipes
@@ -137,92 +137,92 @@ spec:
     query: certificates_snapshot
     snapshot: true
   - description: List the contents of the Windows hosts file
-    interval: 0
+    interval: 3600
     name: etc_hosts
     platform: windows
     query: etc_hosts
   - description: Lists all of the tasks in the Windows task scheduler
-    interval: 0
+    interval: 3600
     name: scheduled_tasks
     platform: windows
     query: scheduled_tasks
   - description: Extracted information from Windows crash logs (Minidumps).
-    interval: 0
+    interval: 3600
     name: windows_crashes
     platform: windows
     query: windows_crashes
     removed: false
   - description: System uptime
-    interval: 0
+    interval: 3600
     name: uptime
     platform: windows
     query: uptime
     snapshot: true
   - description: Snapshot query for WMI script event consumers.
-    interval: 0
+    interval: 3600
     name: wmi_script_event_consumers
     platform: windows
     query: wmi_script_event_consumers
     snapshot: true
   - description: List installed Chocolatey packages
-    interval: 0
+    interval: 3600
     name: chocolatey_packages
     platform: windows
     query: chocolatey_packages
   - description: Shared resources snapshot query
-    interval: 0
+    interval: 28800
     name: shared_resources_snapshot
     platform: windows
     query: shared_resources_snapshot
     snapshot: true
   - description: Lists all installed services configured to start automatically at
       boot
-    interval: 0
+    interval: 3600
     name: services
     platform: windows
     query: services
   - description: Users snapshot query
-    interval: 0
+    interval: 28800
     name: users_snapshot
     platform: windows
     query: users_snapshot
     snapshot: true
   - description: List installed Chrome Extensions for all users
-    interval: 0
+    interval: 3600
     name: chrome_extensions
     platform: windows
     query: chrome_extensions
   - description: Operating system version snapshot query
-    interval: 0
+    interval: 28800
     name: os_version_snapshot
     platform: windows
     query: os_version_snapshot
     snapshot: true
   - description: System information for identification.
-    interval: 0
+    interval: 3600
     name: system_info
     platform: windows
     query: system_info
   - description: Snapshot query for WMI event filters.
-    interval: 0
+    interval: 28800
     name: wmi_event_filters_snapshot
     platform: windows
     query: wmi_event_filters_snapshot
     snapshot: true
   - description: Snapshot query for WMI filter consumer bindings.
-    interval: 0
+    interval: 28800
     name: wmi_filter_consumer_binding_snapshot
     platform: windows
     query: wmi_filter_consumer_binding_snapshot
     snapshot: true
   - description: Information about the resident osquery process
-    interval: 0
+    interval: 28800
     name: osquery_info
     platform: windows
     query: osquery_info
     snapshot: true
   - description: Scheduled Tasks snapshot query
-    interval: 0
+    interval: 28800
     name: scheduled_tasks_snapshot
     platform: windows
     query: scheduled_tasks_snapshot
