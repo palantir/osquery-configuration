@@ -7,21 +7,21 @@ spec:
   - description: Returns an event if a EndpointSecurityTool process is not found running
       from /Applications/EndpointSecurityTool' (OSX) or 'c:\endpointsecuritytool.exe'
       (Windows)
-    interval: 0
+    interval: 28800
     name: endpoint_security_tool_not_running
     platform: windows,darwin
     query: endpoint_security_tool_not_running
     snapshot: true
   - description: "Returns an event if a BackupTool process is not found running from
       '/Applications/BackupTool' (OSX) or 'c:\backuptool.exe' (Windows)"
-    interval: 0
+    interval: 28800
     name: backup_tool_not_running
     platform: windows,darwin
     query: backup_tool_not_running
     snapshot: true
   - description: Returns the content of the key if the backend server does not match
       the expected value
-    interval: 0
+    interval: 3600
     name: endpoint_security_tool_backend_server_registry_misconfigured
     platform: windows
     query: endpoint_security_tool_backend_server_registry_misconfigured

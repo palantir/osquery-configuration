@@ -5,37 +5,37 @@ spec:
   name: windows-application-security
   queries:
   - description: Controls Bitlocker full-disk encryption settings.
-    interval: 0
+    interval: 3600
     name: bitlocker_autoencrypt_settings_registry
     platform: windows
     query: bitlocker_autoencrypt_settings_registry
   - description: Controls Bitlocker full-disk encryption settings.
-    interval: 0
+    interval: 3600
     name: bitlocker_fde_settings_registry
     platform: windows
     query: bitlocker_fde_settings_registry
   - description: Controls Google Chrome plugins that are forcibly installed.
-    interval: 0
+    interval: 3600
     name: chrome_extension_force_list_registry
     platform: windows
     query: chrome_extension_force_list_registry
   - description: Controls EMET-protected applications and system settings.
-    interval: 0
+    interval: 3600
     name: emet_settings_registry
     platform: windows
     query: emet_settings_registry
   - description: Controls Local Administrative Password Solution (LAPS) settings.
-    interval: 0
+    interval: 3600
     name: microsoft_laps_settings_registry
     platform: windows
     query: microsoft_laps_settings_registry
   - description: Controls Windows Passport for Work (Hello) settings.
-    interval: 0
+    interval: 3600
     name: passport_for_work_settings_registry
     platform: windows
     query: passport_for_work_settings_registry
   - description: Controls UAC. A setting of 0 indicates that UAC is disabled.
-    interval: 0
+    interval: 3600
     name: uac_settings_registry
     platform: windows
     query: uac_settings_registry
