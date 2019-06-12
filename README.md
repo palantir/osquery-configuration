@@ -59,10 +59,10 @@ environment.
 4. Logs are located in `/var/log/osquery` (Linux/MacOS) and `c:\ProgramData\osquery\logs` (Windows)
 
 ## Quickstart - Fleet
-1. Install Fleet version 2.0.0 or higher 
-2. [Enroll hosts to your Fleet server](https://github.com/kolide/fleet/blob/master/docs/infrastructure/adding-hosts-to-fleet.md) by configuring the appropriate [flags](https://github.com/kolide/fleet/blob/master/tools/osquery/example_osquery.flags)
-2. [Configure the fleetctl utility](https://github.com/kolide/fleet/blob/master/docs/cli/setup-guide.md#fleetctl-setup) to communicate with your Fleet server
-3. Assuming you'd like to use the endpoint configs, you can use the commands below to apply them:
+Install Fleet version 2.0.0 or higher
+2. [Enroll hosts to your Fleet server](https://github.com/kolide/fleet/blob/master/docs/infrastructure/adding-hosts-to-fleet.md) by configuring the appropriate [flags]
+3. [Configure the fleetctl utility](https://github.com/kolide/fleet/blob/master/docs/cli/setup-guide.md#fleetctl-setup) to communicate with your Fleet server
+4. Assuming you'd like to use the endpoint configs, you can use the commands below to apply them:
 
 ```
 git clone https://github.com/palantir/osquery-configuration.git
