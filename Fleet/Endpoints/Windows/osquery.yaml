@@ -239,7 +239,8 @@ spec:
     query: bitlocker_info_snapshot
     snapshot: true
   targets:
-    labels: null
+    labels: 
+    - MS Windows
 ---
 apiVersion: v1
 kind: query

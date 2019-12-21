@@ -247,7 +247,9 @@ spec:
     query: yum_sources
     snapshot: true
   targets:
-    labels: null
+    labels: 
+    - Ubuntu Linux
+    - CentOS Linux
 ---
 apiVersion: v1
 kind: query
