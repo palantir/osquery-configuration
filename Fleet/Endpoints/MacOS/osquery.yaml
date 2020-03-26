@@ -297,7 +297,8 @@ spec:
     query: user_ssh_keys
     removed: false
   targets:
-    labels: null
+    labels: 
+    - macOS
 ---
 apiVersion: v1
 kind: query
