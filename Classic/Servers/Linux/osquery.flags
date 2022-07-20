@@ -2,6 +2,7 @@
 --audit_allow_sockets
 --audit_persist=true
 --disable_audit=false
+--disable_events=false
 --events_expiry=1
 --events_max=500000
 --logger_min_status=1
