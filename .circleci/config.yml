@@ -5,6 +5,8 @@ jobs:
     machine: true
     steps:
       - checkout
+      # Validate Classic JSON and Fleet YAML semantics before tool-specific linting.
+      - run: ruby tests/config_validation_test.rb
       - run: curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
       - run: sudo apt-get install -y nodejs
       - run: sudo /usr/bin/npm i -g sqlite-parser
